@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <link rel='stylesheet' href='./public/css/app.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav>
+        <a class="fw-bolder fs-3" href="#">mondiality Resto <span class="text-danger ">.</span></a>
+        <ul class="navElmnts">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Menu</a>
+            </li>
+            <li>
+                <a href="">Events</a>
+            </li>
+            <li>
+                <a href="">Chefs</a>
+            </li>
+            <li>
+                <a  href="">Gallery</a>
+            </li>
+            <li>
+                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown">Drop Down</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+        <!-- Modal -->
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Sign up | Log in
+        </button>
+        <i class="navIcon d-lg-none fa-solid fa-bars"></i>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Connexion</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column gap-2">
+                    <div class="modalBtn d-flex gap-3">
+                        <button class="w-50 bg-danger border border-danger text-light py-2">Sign Up</button>
+                        <button class="w-50 bg-light border border-danger text-danger py-2">Log In</button>
+                    </div>
+                    <div class="LogInModal d-none">
+                        <h5 class="text-center">Log in</h5>
+                        <form>
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="password">
+                        </form>
+                    </div>
+                    <div class="signUpModal ">
+                        <h5 class="text-center">Sign up</h5>
+                        <form class="d-flex flex-column gap-2">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Second Name">
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="password">
+                            <input type="password" placeholder="confirm your password">
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!--~ hero Section -->
+        <section>
+            <div
+                class="heroSection d-flex flex-lg-row justify-content-lg-between align-items-lg-center flex-column-reverse">
+                <div class="leftSideHeroS ">
+                    <h1 class="titre">Enjoy Your Healthy Delicious Food</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam quos sint ipsa dolore!</p>
+                    <div class="d-flex gap-3">
+                        <button class="bookTable">Book a Table</button>
+                        <button class="heroBtn">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <span>Watch Video</span>
+                        </button>
+                    </div>
+                </div>
+                <img src="./public/images/img/hero-img.png" alt="">
+            </div>
+            <div class="d-none videoDiv w-100 h-100 d-flex justify-content-center align-items-center ">
+                <i class="fa-solid fa-xmark"></i>
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/QCa8odaWiYY"
+                    title="Resumen | Copa del Rey | At. Madrid 4-2 Real Madrid | Octavos de final" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <!--~ about  -->
+        <section>
+            <div>
+                <div class="d-flex pt-5 pb-3 align-items-center justify-content-center flex-column">
+                    <p>ABOUT US</p>
+                    <h3 class="titre">LEARN MORE <span class="text-danger">ABOUT US</span></h3>
+                </div>
+                <div class="aboutSection w-100 px-lg-5 d-flex gap-5">
+                    <div class="aboutSectionLeft">
+                        <div class="bg-light w-50">
+                            <h4>Book a Table</h4>
+                            <h4 class="text-danger">+1 5589 55488 55</h4>
+                        </div>
+                    </div>
+                    <div class="aboutSectionRight">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consequuntur error
+                            tempora, cumque quo eligendi voluptatum!</p>
+                        <div>
+                            <i class="fa-solid fa-check-double text-danger"></i>
+                            <span>Lorem ipsum dolor sit dolar borak amet.</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check-double text-danger"></i>
+                            <span>Lorem ipsum dolor sit dolar borak amet.</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check-double text-danger"></i>
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quasi amet consequuntur iste
+                            natus veritatis at impedit rerum commodi placeat fugit accusamus labore suscipit,
+                            laudantium, aspernatur eaque nesciunt nulla deleniti?</p>
+                        <div class="aboutSectionRightVideo">
+                            <button class="button">
+                                <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    width="26px">
+                                    <path
+                                        d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-none videoDiv1 w-100 h-100 d-flex justify-content-center align-items-center ">
+                        <i class="fa-solid fa-xmark"></i>
+                        <iframe width="996" height="560" src="https://www.youtube.com/embed/vtG4lGJ2lig"
+                            title="The Best 20 Seconds in El Clasico Ever" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+        </section>
+        <!--~ cards  -->
+        <section>
+            <div class="cards">
+                <div class="firstCard">
+                    <h2>Why Choose Yummy ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus dolorum a sit, quibusdam
+                        itaque corporis deserunt saepe error! Nulla, maiores dolorum. Non velit deserunt illum
+                        ducimus ab. Ea, esse sequi sit amet consectetur, adipisicing elit. Delectus dolorum a sit,
+                        quibusdam.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="whiteCards">
+                    <i class="fa-solid fa-clipboard"></i>
+                    <span>Corporis statistiques officiel abelardo</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing rerum eveniet
+                        eos non corporis!</p>
+                </div>
+                <div class="whiteCards">
+                    <i class="fa-regular fa-gem"></i>
+                    <span>Corporis statistiques officiel abelardo</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing rerum eveniet
+                        eos non corporis!</p>
+                </div>
+                <div class="whiteCards">
+                    <i class="fa-solid fa-diagram-next"></i>
+                    <span>Corporis statistiques officiel abelardo</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing rerum eveniet
+                        eos non corporis!</p>
+                </div>
+            </div>
+        </section>
+        <!--~ statistics -->
+        <section>
+            <div class="statistics">
+                <div>
+                    <div class="numbers">
+                        <h3>232</h3>
+                        <span>Clients</span>
+                    </div>
+                    <div class="numbers">
+                        <h3>521</h3>
+                        <span>Projects</span>
+                    </div>
+                    <div class="numbers">
+                        <h3>1453</h3>
+                        <span>Hours Of Support</span>
+                    </div>
+                    <div class="numbers">
+                        <h3>32</h3>
+                        <span>Workers</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--~ menu  -->
+        <section class="py-5">
+            <div>
+                <div class="d-flex pt-5 pb-3 align-items-center justify-content-center flex-column">
+                    <p>OUR Menu</p>
+                    <h3 class="titre">CHECK OUR <span class="text-danger">YUMMY MENU</span></h3>
+                </div>
+                <div class="foodChoices">
+                    <button>Starters</button>
+                    <button>Breakfast</button>
+                    <button>Lunch</button>
+                    <button>Dinner</button>
+                </div>
+            </div>
+            <div class="foodMenu">
+                <div class="d-flex justify-content-center align-items-center flex-column py-4 gap-3">
+                    <div class="text-center">
+                        <p>MENU</p>
+                        <h2 class="text-danger">Starters</h2>
+                    </div>
+                    <div class="palteMenu">
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-2.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-1.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-3.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-5.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-4.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-6.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-flex justify-content-center align-items-center flex-column py-4 gap-3">
+                    <div class="text-center">
+                        <p>MENU</p>
+                        <h2 class="text-danger">Breakfast</h2>
+                    </div>
+                    <div class="palteMenu">
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-1.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-2.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-4.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-3.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-6.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-5.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-flex justify-content-center align-items-center flex-column py-4 gap-3">
+                    <div class="text-center">
+                        <p>MENU</p>
+                        <h2 class="text-danger">Lunch</h2>
+                    </div>
+                    <div class="palteMenu">
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-2.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-4.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-3.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-1.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-6.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-5.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-flex justify-content-center align-items-center flex-column py-4 gap-3">
+                    <div class="text-center">
+                        <p>MENU</p>
+                        <h2 class="text-danger">Dinner</h2>
+                    </div>
+                    <div class="palteMenu">
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-5.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-1.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-2.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-3.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-4.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                        <div class="plate">
+                            <img src="./public/images/img/menu/menu-item-6.png" alt="">
+                            <h5>Magnam Tiste</h5>
+                            <p>Lorem, ipsum, dolor, sit, amet</p>
+                            <span class="text-danger">$5.95</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--~ TESTIMONIALS carousel -->
+        <section class="py-5 bg-body-secondary">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner ">
+                    <div class="text-center">
+                        <p>TESTIMONIALS</p>
+                        <h4 class="titre">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span> </h4>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column justify-content-center align-items-center gap-5 py-5">
+                            <div class="testimonialsCarousel d-flex justify-content-center align-items-center">
+                                <div class="comment">
+                                    <span><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Quibusdam, repellendus dolorum quae dicta ut
+                                        magni
+                                        cumque pariatur temporibus reprehenderit minima!<i
+                                            class="fa-solid fa-quote-right text-danger"></i></span>
+                                    <h4>Carlos Tevez</h4>
+                                    <p>Manager</p>
+                                    <i class="fa-solid fa-star text-warning"></i><i
+                                        class="fa-solid fa-star text-warning"></i><i
+                                        class="fa-solid fa-star text-warning"></i><i
+                                        class="fa-solid fa-star text-warning"></i><i
+                                        class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <div class="commentImg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center gap-5 py-5">
+                            <div class="testimonialsCarousel d-flex justify-content-center align-items-center">
+                                <div class="comment">
+                                    <span><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Quibusdam, repellendus dolorum quae dicta ut
+                                        magni
+                                        cumque pariatur temporibus reprehenderit minima!<i
+                                            class="fa-solid fa-quote-right text-danger"></i></span>
+                                    <h4>SARA WILSSON</h4>
+                                    <p>Designer</p>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <div class="commentImg commentImg1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center gap-5 py-5">
+                            <div class="testimonialsCarousel d-flex justify-content-center align-items-center">
+                                <div class="comment">
+                                    <span><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Quibusdam, repellendus dolorum quae dicta ut
+                                        magni
+                                        cumque pariatur temporibus reprehenderit minima!<i
+                                            class="fa-solid fa-quote-right text-danger"></i></span>
+                                    <h4>Jena Karlis</h4>
+                                    <p>Store Owner</p>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <div class="commentImg commentImg2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center gap-5 py-5">
+                            <div class="testimonialsCarousel d-flex justify-content-center align-items-center">
+                                <div class="comment">
+                                    <span><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Quibusdam, repellendus dolorum quae dicta ut
+                                        magni
+                                        cumque pariatur temporibus reprehenderit minima!<i
+                                            class="fa-solid fa-quote-right text-danger"></i></span>
+                                    <h4>Anderson Silva</h4>
+                                    <p>Student</p>
+                                    <div class="">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="commentImg commentImg3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!--* event carousel  -->
+        <section>
+            <div class="d-flex text-center pt-5 pb-3 align-items-center justify-content-center flex-column">
+                <p>Events</p>
+                <h3 class="titre">SHARE <span class="text-danger">YOUR MOMENTS </span> IN OUR RESTAURANT</h3>
+            </div>
+
+            <div class="eventCarousel">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousell">
+                    <li>
+                        <div class="eventImg">
+                            <div>
+                                <h4>Custom Parties</h4>
+                                <h3>$99</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis doloribus
+                                    veniam suscipit quidem culpa ea.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="eventImg eventImg2">
+                            <div>
+                                <h4>Private Parties</h4>
+                                <h3>$289</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis doloribus
+                                    veniam suscipit quidem culpa ea.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="eventImg eventImg3">
+                            <div>
+                                <h2>Birthday Parties</h2>
+                                <h3>$499</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis doloribus
+                                    veniam suscipit quidem culpa ea.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="eventImg">
+                            <div>
+                                <h4>Custom Parties</h4>
+                                <h3>$99</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis doloribus
+                                    veniam suscipit quidem culpa ea.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="eventImg eventImg2">
+                            <div>
+                                <h4>Private Parties</h4>
+                                <h3>$289</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis doloribus
+                                    veniam suscipit quidem culpa ea.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="eventImg eventImg3">
+                            <div>
+                                <h2>Birthday Parties</h2>
+                                <h3>$499</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis doloribus
+                                    veniam suscipit quidem culpa ea.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </section>
+        <!--~ chefs cards  -->
+        <section class="bg-dark-subtle p-3">
+            <div class="text-center">
+                <span>CHEFS</span>
+                <h2 class="titre">OUR <span class="text-danger"> PROFFESIONAL </span> CHEFS</h2>
+            </div>
+            <div class="cards p-5 d-flex justify-content-center  gap-5">
+                <div class="cardChefs">
+                    <div class="chefImg">
+                        <!-- <img src="./public/images/img/chefs/chefs-1.jpg" alt=""> -->
+                        <div class="socialMedia">
+                            <a href=""><i class="fa-brands fa-x-twitter text-black"></i></a>
+                            <a href=""> <i class="fa-brands fa-facebook text-black"></i></a>
+                            <a href=""> <i class="fa-brands fa-instagram text-black"></i></a>
+                            <a href=""> <i class="fa-brands fa-linkedin text-black"></i></a>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h5>Walter White</h5>
+                        <p>Master chef</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aut voluptate,dolor sit
+                            amet consectetur cumque fuga.
+                        </p>
+                    </div>
+                </div>
+                <div class="cardChefs">
+                    <div class="chefImg2">
+                        <!-- <img src="./public/images/img/chefs/chefs-1.jpg" alt=""> -->
+                        <div class="socialMedia">
+                            <a href=""><i class="fa-brands fa-x-twitter text-black"></i></a>
+                            <a href=""> <i class="fa-brands fa-facebook text-black"></i></a>
+                            <a href=""> <i class="fa-brands fa-instagram text-black"></i></a>
+                            <a href=""> <i class="fa-brands fa-linkedin text-black"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Sarah Jhonson</h5>
+                        <p>Patissier</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aut voluptate,dolor sit
+                            amet consectetur cumque fuga.
+                        </p>
+                    </div>
+                </div>
+                <div class="cardChefs">
+                    <div class="chefImg3">
+                        <!-- <img src="./public/images/img/chefs/chefs-1.jpg" alt=""> -->
+                        <div class="socialMedia">
+                            <a href=""><i class="fa-brands fa-x-twitter text-black"></i></a>
+                            <a href=""> <i class="fa-brands fa-facebook text-black"></i></a>
+                            <a href=""> <i class="fa-brands fa-instagram text-black"></i></a>
+                            <a href=""> <i class="fa-brands fa-linkedin text-black"></i></a>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h5>Wiliam Anderson</h5>
+                        <p>Cook</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aut voluptate,dolor sit
+                            amet consectetur cumque fuga.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--~ book form  -->
+        <section class="p-3">
+            <div class="text-center ">
+                <span>CHEFS</span>
+                <h2 class="titre">BOOK <span class="text-danger"> YOUR STAY </span> WITH US</h2>
+                <div class="bookDiv d-flex justify-content-center align-items-center gap-5 bg-body-tertiary">
+                    <div class="bookImg ">
+                    </div>
+                    <div class="bookForm">
+                        <form>
+                            <input type="text" placeholder="Your Name">
+                            <input type="email" placeholder="Your Email">
+                            <input type="number" placeholder="Your phone">
+                            <input type="date" placeholder="Date">
+                            <input type="Time" placeholder="Time">
+                            <input type="number" placeholder="# of people">
+                            <textarea rows="5" placeholder="Message"></textarea>
+                        </form>
+                        <button class="navBtn">Book a Table</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--* gallery carousel  -->
+        <section>
+            <div class="text-center">
+                <span>Gallery</span>
+                <h2 class="titre">CHECK<span class="text-danger"> OUR GALLERY</span> </h2>
+            </div>
+
+            <div class="galleryCarousel">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carouselGallery">
+                    <li>
+                        <div class="GalleryImg">
+                            <img src="./public/images/img/gallery/gallery-1.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="GalleryImg">
+                            <img src="./public/images/img/gallery/gallery-2.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="GalleryImg">
+                            <img src="./public/images/img/gallery/gallery-3.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="GalleryImg">
+                            <img src="./public/images/img/gallery/gallery-4.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="GalleryImg">
+                            <img src="./public/images/img/gallery/gallery-5.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="GalleryImg">
+                            <img src="./public/images/img/gallery/gallery-6.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="GalleryImg">
+                            <img src="./public/images/img/gallery/gallery-7.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="GalleryImg">
+                            <img src="./public/images/img/gallery/gallery-8.jpg" alt="">
+                        </div>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </section>
+        <!--~ contact us -->
+        <section class="d-flex flex-column justify-content-center align-items-center gap-5 py-5">
+            <div class="text-center">
+                <span>Contact</span>
+                <h2 class="titre">NEDD HELP? <span class="text-danger"> CONTACT US</span> </h2>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d987.9609298308616!2d-7.536142323753004!3d33.602937641231584!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1705576789693!5m2!1sfr!2sma"
+                    height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="formDiv d-flex justify-content-center align-items-center">
+                <div class="contact gap-5 d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="contactDetail">
+                        <i class="fa-regular fa-map"></i>
+                        <div>
+                            <h5>Our Address</h5>
+                            <p>A 108 Adam Street,New York,NY 535499 </p>
+                        </div>
+                    </div>
+                    <div class="contactDetail">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div>
+                            <h5>Email Us</h5>
+                            <p>contact@example.com </p>
+                        </div>
+                    </div>
+                    <div class="contactDetail">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h5>Our Address</h5>
+                            <p>A 108 Adam Street,New York,NY 535499 </p>
+                        </div>
+                    </div>
+                    <div class="contactDetail">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <div>
+                            <h5>Our Address</h5>
+                            <p>A 108 Adam Street,New York,NY 535499 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <div>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Message" name="" id="" cols="30" rows="5"></textarea>
+                </form>
+                <button class="navBtn">Send Message</button>
+            </div>
+        </section>
+        <div class="goBack">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </main>
+
+    <footer class="bg-black py-3">
+        <div class="mainfooter d-flex justify-content-around py-5 ">
+            <div class="footerDetail">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <h4>Address</h4>
+                    <p>A 108 Adam street New York, NY 598958-US</p>
+                </div>
+            </div>
+            <div class="footerDetail">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <h4>Address</h4>
+                    <p>A 108 Adam street New York, NY 598958-US</p>
+                </div>
+            </div>
+            <div class="footerDetail">
+                <i class="fa-regular fa-clock"></i>
+                <div>
+                    <h4>Address</h4>
+                    <p>A 108 Adam street New York, NY 598958-US</p>
+                </div>
+            </div>
+            <div class="footerSocialM">
+                <h4>Follow Us</h4>
+                <div>
+                    <a href=""><i class="fa-brands fa-x-twitter text-light"></i></a>
+                    <a href=""> <i class="fa-brands fa-facebook text-light"></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram text-light"></i></a>
+                    <a href=""> <i class="fa-brands fa-linkedin text-light"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-light">
+            <span> &copy; Copyright Hamza. All Rights Reserved </span>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src=./public/js/app.js></script>
+    <script src=./node_modules/bootstrap/dist/js/bootstrap.bundle.js></script>
+
+</body>
+
+</html>

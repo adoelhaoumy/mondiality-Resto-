@@ -1,0 +1,793 @@
+@font-face
+    font-family: gloria
+    src: url(../fonts/GloriaHallelujah-Regular.ttf)
+.titre
+    font-family: gloria
+
+.heroSection
+    background-color: #dcdcdc
+    padding: 5vh
+    img
+        width: 40%
+.leftSideHeroS
+    width: 30%
+.heroBtn
+    border: none
+    background: none
+    font-weight: normal
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 0.5vw
+    color: #000 !important
+    border: 1px solid #dcdcdc
+    padding: 0 2vw
+    border-radius: 50px
+    i
+        color: #dd1f1f
+        font-size: 1.8vw
+        font-weight: lighter
+    &:hover
+        border: 1px solid #dd1f1f !important
+        background: none !important
+.bookTable
+    background-color: #da0000
+    border: none
+    border-radius: 50px
+    padding: 0.5vw 1.8vw
+    color: #ffffff
+    box-shadow: 6px 3px 20px rgba(221, 16, 16, 40%)
+
+.aboutSectionLeft
+    display: flex
+    justify-content: center
+    position: relative
+    background-image: url(../images/img/about.jpg)
+    width: 58%
+    height: 100vh
+    background-size: cover
+    background-repeat: no-repeat
+    div
+        position: absolute
+        bottom: 30px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+.aboutSectionRight
+    width: 42%
+    display: flex
+    flex-direction: column
+    gap: 1vh
+.aboutSectionRightVideo
+    color: #d40b0b
+    font-size: 7vw
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    background-image: url(../images/img/about-2.jpg)
+    width: 100%
+    height: 60vh
+    background-size: contain
+    background-repeat: no-repeat
+    .button
+        display: flex
+        justify-content: center
+        color: #fff
+        width: 80px
+        height: 80px
+        border-radius: 100%
+        background: linear-gradient(30deg, rgb(234, 15, 15) 20%, rgb(255, 38, 0) 80%)
+        transition: all 0.3s ease-in-out 0s
+        box-shadow: rgb(234, 14, 14) 0px 0px 0px 0px
+        animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse
+        align-items: center
+        border: 0
+    .button:is(:hover, :focus)
+        transform: scale(1.2)
+
+@keyframes pulse
+    100%
+        box-shadow: 0 0 0 45px rgba(193,244,246,0)
+
+.cards
+    background-color: #bab8b825
+    display: flex
+    align-items: center
+    padding: 5vh
+    gap: 2vw
+.firstCard
+    width: 30%
+    background-color: #ce1b1b
+    color: #ffffff
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 5vh
+    button
+        width: 40%
+        border-radius: 50px
+        border: none
+        background-color: #ee3e3e
+        color: #fff
+        padding: 1vw
+.whiteCards
+    background-color: #fff
+    width: 20%
+    height: fit-content
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 2vw
+    gap: 2vh
+    transition: 0.2s
+    i
+        color: #ee3e3e
+        font-size: 40px
+    span
+        font-size: 1.5vw
+    &:hover
+        transform: scale(1.06)
+
+.cardChefs
+    background-color: #ffffff
+    width: 30%
+    text-align: center
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 20%)
+    .chefImg
+        background-image: url(../images/img/chefs/chefs-1.jpg)
+        width: 100%
+        height: 50vh
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+        div
+            position: absolute
+            right: 1vw
+            top: 3vh
+            background-color: #acaaaa
+            opacity: 50%
+            border-radius: 0.2rem
+            padding: 0.5vw
+            width: fit-content
+            display: flex
+            flex-direction: column
+            font-size: larger
+            gap: 0.5vh
+            text-decoration: none
+            color: #000000
+            display: none
+            transition: 2s
+    &:hover
+        transform: scale(1.03)
+        .chefImg
+            div
+                display: flex
+    .chefImg2
+        background-image: url(../images/img/chefs/chefs-2.jpg)
+        width: 100%
+        height: 50vh
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+        div
+            position: absolute
+            right: 1vw
+            top: 3vh
+            background-color: #acaaaa
+            opacity: 50%
+            border-radius: 0.2rem
+            padding: 0.5vw
+            width: fit-content
+            display: flex
+            flex-direction: column
+            font-size: larger
+            gap: 0.5vh
+            text-decoration: none
+            color: #000000
+            display: none
+            transition: 2s
+    &:hover
+        transform: scale(1.03)
+        .chefImg2
+            div
+                display: flex
+    .chefImg3
+        background-image: url(../images/img/chefs/chefs-3.jpg)
+        width: 100%
+        height: 50vh
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+        div
+            position: absolute
+            right: 1vw
+            top: 3vh
+            background-color: #acaaaa
+            opacity: 50%
+            border-radius: 0.2rem
+            padding: 0.5vw
+            width: fit-content
+            display: flex
+            flex-direction: column
+            font-size: larger
+            gap: 0.5vh
+            text-decoration: none
+            color: #000000
+            display: none
+            transition: 2s
+    &:hover
+        transform: scale(1.03)
+        .chefImg3
+            div
+                display: flex
+.bookImg
+    background-image: url("../images/img/reservation(1).jpg ")
+    width: 50%
+    height: 70vh
+    background-size: 100%
+    background-repeat: no-repeat
+
+.bookForm
+    display: flex
+    flex-direction: column
+    gap: 1vw
+    justify-content: center
+    align-items: center
+    form
+        display: flex
+        flex-wrap: wrap
+        gap: 2vw
+        input
+            width: 30%
+            padding: 1vw
+            border: 1px solid #d8d6d6
+        textarea
+            padding: 1vw
+            width: 96%
+            border: 1px solid #d8d6d6
+    button
+        width: fit-content
+        left: 50%
+        top: 45%
+.comment
+    width: 50%
+    padding-left: 2vw
+    border-left: 5px solid #e71010
+.commentImg
+    background-image: url(../images/img/testimonials/testimonials-1.jpg)
+    width: 10vw
+    height: 10vw
+    border-radius: 1000px
+    background-size: cover
+    background-repeat: no-repeat
+.commentImg1
+    background-image: url(../images/img/testimonials/testimonials-2.jpg)
+.commentImg2
+    background-image: url(../images/img/testimonials/testimonials-3.jpg)
+.commentImg3
+    background-image: url(../images/img/testimonials/testimonials-4.jpg)
+
+.carousel-indicators
+    button
+        width: 0.6vw !important
+        height: 0.6vw !important
+        border-radius: 50%
+        background-color: #d41313 !important
+
+.eventCarousel
+    padding: 5vh 0
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    i
+        background: #000
+        width: 2vw
+        height: 2vw
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+        cursor: pointer
+        &:first-child
+            position: absolute
+            left: 3vw
+            top: 50%
+            transform: translate(-50%)
+        &:last-child
+            position: absolute
+            right: -1vw
+            top: 50%
+            transform: translate(-50%)
+    ul
+        display: flex
+        list-style: none
+        gap: 2.8vw
+        overflow: hidden
+        scroll-behavior: smooth
+.videoDiv
+    position: fixed
+    overflow-y: hidden
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #0000008f
+    z-index: 10
+    i
+        cursor: pointer
+        position: absolute
+        right: 3vw
+        top: 2vh
+        color: #fff
+        font-size: xx-large
+.videoDiv1
+    position: fixed
+    overflow-y: hidden
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #0000008f
+    z-index: 10
+    i
+        cursor: pointer
+        position: absolute
+        right: 3vw
+        top: 2vh
+        color: #fff
+        font-size: xx-large
+.eventImg
+    background-image: url(../images/img/events-1.jpg)
+    width: 30vw
+    height: 70vh
+    background-size: cover
+    background-repeat: no-repeat
+    color: #fff
+    div
+        background-color: #06060665
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: end
+        padding-left: 1.5vw
+        font-size: large
+        font-weight: bold
+        h3
+            border-bottom: 3px solid #d71515
+            width: fit-content
+        p
+            width: 80%
+            font-weight: normal
+.eventImg2
+    background-image: url(../images/img/events-2.jpg)
+.eventImg3
+    background-image: url(../images/img/events-3.jpg)
+
+.foodChoices
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 1vw
+    button
+        border: none
+        font-size: larger
+        border-bottom: 2px solid #060606
+        background: none
+        // &:first-child
+        //     color: #d01b1b
+        //     border-bottom: 2px solid #d01b1b
+        &:hover
+            color: #d01b1b
+        &:focus
+            color: #d01b1b
+            border-bottom: 2px solid #d01b1b
+.palteMenu
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    gap: 3vw
+.plate
+    text-align: center
+    width: 30vw
+    // display: flex
+    // flex-direction: column
+    // align-items: center
+    img
+        width: 15vw
+        margin-bottom: 1vh
+.statistics
+    background-image: url(../images/img/stats-bg.jpg)
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-size: cover
+    width: 100%
+    height: 50vh
+    div
+        width: 100%
+        height: 100%
+        background-color: #27272762
+        display: flex
+        justify-content: center
+        align-items: center
+        div
+            display: flex
+            flex-direction: column
+            color: #fff
+            font-weight: bolder
+            font-size: large
+
+.galleryCarousel
+    position: relative
+    i
+        background: #fff
+        width: 2vw
+        height: 2vw
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #000
+        cursor: pointer
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.47)
+        &:first-child
+            position: absolute
+            left: 3vw
+            top: 50%
+            transform: translate(-50%)
+        &:last-child
+            position: absolute
+            right: -1vw
+            top: 50%
+            transform: translate(-50%)
+    ul
+        list-style: none
+        display: flex
+        gap: 1vw
+        overflow: hidden
+        padding: 3vw
+        scroll-behavior: smooth
+
+.GalleryImg
+    img
+        width: 18vw
+        // height: 16vw
+        object-fit: contain
+
+.map
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 2vw 10vw
+    width: 100%
+    iframe
+        border: none
+        width: 100%
+.contact
+    width: 80%
+.contactDetail
+    display: flex
+    align-items: center
+    background-color: #d0cfcf
+    width: 40%
+    gap: 2vw
+    padding: 1vh
+    i
+        color: #fff
+        font-size: 2vw
+        background-color: #e11616
+        width: 4vw
+        height: 4vw
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 60%
+.contactForm
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 1vw
+    width: 80%
+    background: #fcfcfc
+    box-shadow: 2px 5px 70px rgba(0, 0, 0, 20%)
+    padding: 2vw
+    form
+        display: flex
+        flex-direction: column
+        width: 100%
+        gap: 1vw
+        div
+            display: flex
+            gap: 1vw
+            input
+                width: 50%
+        input
+            width: 100%
+            padding: 1vh
+.goBack
+    width: 3vw
+    height: 3vw
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #ed0f0f
+    border-radius: 60px
+    position: fixed
+    bottom: 5vh
+    right: 3vh
+    list-style: none
+    color: #fff
+    z-index: 1000
+
+@media screen and ( max-width: 430px )
+    .heroSection
+        width: 100 !important
+        gap: 5vh
+        img
+            width: 100%
+        .leftSideHeroS
+            width: 100%
+            text-align: center
+            div
+                justify-content: center
+                align-items: center
+                button
+                    padding: 1.5vh
+                    i
+                        font-size: larger
+    .videoDiv
+        width: 100%
+    .aboutSection
+        flex-direction: column
+        .aboutSectionLeft
+            width: 100%
+        .aboutSectionRight
+            width: 100%
+            .aboutSectionRightVideo
+                i
+                    font-size: 20vw
+    .cards
+        flex-direction: column
+        .firstCard
+            width: 100% !important
+        .whiteCards
+            width: 100% !important
+            padding: 7vh 0
+            span
+                font-size: 4vw
+    .statistics
+        height: 100vh
+        div
+            flex-direction: column
+    .foodMenu
+        div
+            flex-direction: column
+            width: 100% !important
+            .palteMenu
+                width: 100%
+                .plate
+                    font-size: large
+                    img
+                        width: 60%
+                    span
+                        font-weight: bold
+    .carousel-indicators
+        button
+            width: 3vw !important
+            height: 3vw !important
+    .carousel-item
+        div
+            .testimonialsCarousel
+                display: flex
+                flex-direction: column !important
+            .comment
+                width: 80%
+            .commentImg
+                object-fit: cover !important
+                width: 80% !important
+                height: 80vw !important
+    .carousell
+        li
+            width: 100%
+            .eventImg
+                width: 100%
+                div
+                    width: 100%
+    .cards
+        flex-direction: column
+        padding: 0 !important
+        .cardChefs
+            width: 100%
+    .bookDiv
+        flex-direction: column
+        padding-bottom: 2vh
+        .bookImg
+            width: 100%
+        .bookForm
+            input
+                width: 100%
+                padding: 2vh
+            textarea
+                width: 100%
+            button
+                padding: 1.5vh 5vw
+    .galleryCarousel
+        .carouselGallery
+            width: 100%
+            li
+                width: 100%
+    .contact
+        flex-direction: column
+        width: 100%
+        .contactDetail
+            width: 100%
+            font-size: larger
+            i
+                width: 10vw
+                height: 10vw
+                font-size: larger
+    .contactForm
+        width: 90%
+        gap: 2vh
+        form
+            flex-direction: column
+            gap: 4vh
+            div
+                display: flex
+                width: 100%
+                flex-direction: column
+                gap: 4vh
+                input
+                    width: 100%
+        button
+            padding: 1vh 4vw
+    
+@media screen and ( max-width: 770px )
+    .heroSection
+        width: 100% !important
+        gap: 5vh
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 8vh
+        img
+            width: 80%
+        .leftSideHeroS
+            width: 100%
+            text-align: center
+            div
+                justify-content: center
+                align-items: center
+                button
+                    padding: 1vh 3vh
+                    i
+                        font-size: larger
+    .videoDiv
+        width: 100%
+    .aboutSection
+        flex-direction: column
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 2vh 0
+        .aboutSectionLeft
+            width: 90% !important
+        .aboutSectionRight
+            width: 90% !important
+            .aboutSectionRightVideo
+                width: 100% !important
+                justify-content: center
+                align-items: center
+                i
+                    font-size: 20vw
+    .cards
+        flex-direction: column
+        padding: 2vh 0
+        .firstCard
+            width: 100% !important
+        .whiteCards
+            width: 100% !important
+            padding: 7vh 0
+            span
+                font-size: 4vw
+    .statistics
+        height: 100vh
+        div
+            flex-direction: column
+    .foodMenu
+        div
+            flex-direction: column
+            width: 100% !important
+            .palteMenu
+                width: 100%
+                .plate
+                    font-size: large
+                    img
+                        width: 60%
+                    span
+                        font-weight: bold
+    .carousel-indicators
+        button
+            width: 1vw !important
+            height: 1vw !important
+    .carousel-item
+        div
+            .testimonialsCarousel
+                display: flex
+                flex-direction: column !important
+            .comment
+                width: 80%
+            .commentImg
+                object-fit: cover !important
+                width: 40% !important
+                height: 40vw !important
+    .carousell
+        display: flex
+        li
+            min-width: 100%
+            .eventImg
+                min-width: 100%
+                div
+                    width: 100%
+    .cards
+        flex-wrap: wrap
+        flex-direction: row
+        padding: 0 !important
+        .cardChefs
+            width: 40% !important
+    .bookDiv
+        flex-direction: column
+        padding-bottom: 2vh
+        .bookImg
+            width: 100%
+        .bookForm
+            input
+                width: 48%
+                padding: 2vh
+            textarea
+                width: 100%
+            button
+                padding: 1.5vh 5vw
+    .galleryCarousel
+        .carouselGallery
+            width: 100%
+            li
+                width: 100%
+    .contact
+        flex-direction: column
+        width: 100%
+        .contactDetail
+            width: 100%
+            font-size: larger
+            i
+                width: 10vw
+                height: 10vw
+                font-size: larger
+    .contactForm
+        width: 90%
+        gap: 2vh
+        form
+            flex-direction: column
+            gap: 4vh
+            div
+                display: flex
+                width: 100%
+                flex-direction: column
+                gap: 4vh
+                input
+                    width: 100%
+        button
+            padding: 1vh 4vw
+    .goBack
+        width: 5vw
+        height: 5vw
+
